@@ -1,8 +1,8 @@
 // db.js
 const { MongoClient } = require("mongodb");
 
-const uri = "mongodb+srv://rafay:rafay@cluster0.gbkoiro.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // Replace with your URI
-const dbName = "movies_recommender";
+const uri = process.env.url;
+const dbName = process.env.Database_Name;
 
 let client;
 let db;
